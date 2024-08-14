@@ -8,7 +8,14 @@ import ContactPage from "./tabs/contact";
 
 const NavBar = () => {
     const [view, setView] = useState<string>('home');
+    const [hoveredTab, setHoveredTab] = useState<string | null>(null);
 
+    const getUnderlineClass = (tab: string) => {
+        if (hoveredTab && hoveredTab !== tab) return 'w-0';
+        return view === tab || hoveredTab === tab ? 'w-full' : 'w-0';
+    };
+    
+    
 
     const renderContent = () => {
         switch (view) {
@@ -23,24 +30,50 @@ const NavBar = () => {
         }
     }
     return (
-        <div>
+        <nav className="flex justify-between items-center bg-darkMint p-4 text-mintCream">
             {/*NavBar*/}
-            <nav>
-            <a href="#" onClick={() => setView('home')} className={`p-2 ${view === 'home' ? 'underline decoration-green-500 decoration-4 rounded-lg' : 'bg-transparent'}`}>
+            <div className="flex gap-2 font-semibold">
+                <a className="p-2 px-4 group" href="#" onClick={() => setView('home')} onMouseEnter={() => setHoveredTab('home')} onMouseLeave={() => setHoveredTab(null)}>
                     Home
+                    <div className={`bg-teal-500 h-[2px] ${getUnderlineClass('home')} transition-all duration-500`}></div>
                 </a>
-                <a href="#" onClick={() => setView('about')} className={`p-2 ${view === 'about' ? 'underline decoration-green-500 decoration-4' : 'bg-transparent'}`}>
+
+                <a className="p-2 px-4 group" href="#" onClick={() => setView('about')} onMouseEnter={() => setHoveredTab('about')} onMouseLeave={() => setHoveredTab(null)}>
                     About
+                    <div className={`bg-teal-500 h-[2px] ${getUnderlineClass('about')} transition-all duration-500`}></div>
                 </a>
-                <a href="#" onClick={() => setView('projects')} className={`p-2 ${view === 'projects' ? 'underline decoration-green-500 decoration-4' : 'bg-transparent'}`}>
+
+                <a className="p-2 px-4 group" href="#"  onClick={() => setView('projects')} onMouseEnter={() => setHoveredTab('projects')} onMouseLeave={() => setHoveredTab(null)}>
                     Projects
+                    <div className={`bg-teal-500 h-[2px] ${getUnderlineClass('projects')} transition-all duration-500`}></div>
                 </a>
-                <a href="#" onClick={() => setView('contact')} className={`p-2 ${view === 'contact' ? 'underline decoration-green-500 decoration-4' : 'bg-transparent'}`}>
+
+                <a className="p-2 px-4 group" href="#" onClick={() => setView('contact')} onMouseEnter={() => setHoveredTab('contact')} onMouseLeave={() => setHoveredTab(null)}>
                     Contact
+                    <div className={`bg-teal-500 h-[2px] ${getUnderlineClass('contact')} transition-all duration-500`}></div>
                 </a>
-            </nav>
+                
+            </div>
+
+            <div className="ml-auto flex items-center gap-4 ">
+                <a href="https://www.linkedin.com/in/quoc-van-tilburg-le-293333294/" className="px-4 py-2">
+                    <img src="icons/linkedin.svg" className="w-6 h-6" alt="Linkedin"/>
+                </a>
+
+                <a href="https://github.com/Quoctynoob" className="px-4 py-2">
+                    <img src="icons/github.svg" className="w-6 h-6" alt="Github"/>
+                </a>
+
+                <a href="https://www.instagram.com/tilburgquoc/" className="px-4 py-2">
+                    <img src="icons/instagram.svg" className="w-6 h-6" alt="Instagram"/>
+                </a>
+
+                <a href="mailto:tilburgquoc34@gmail.com" className="px-4 py-2">
+                    <img src="icons/mail.svg" className="w-6 h-6" alt="Mail"/>
+                </a>
+            </div>
             {renderContent()}
-        </div>
+        </nav>
     )
 }
 
