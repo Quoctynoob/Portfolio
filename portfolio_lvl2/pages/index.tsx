@@ -1,4 +1,4 @@
-import  "@/app/styles/globals.css";
+
 
 const IndexPage = () => {
     return (
