@@ -29,7 +29,7 @@ const Typewriter: React.FC = () => {
     return (
         <div>
             {/* Element that will display the typewriter effect */}
-            <span id="element" ref={typedElementRef}></span>
+            <span id="element" ref={typedElementRef} className='text-3xl font-bold text-mintCream'></span>
         </div>
     );
 };

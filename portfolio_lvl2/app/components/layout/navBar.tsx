@@ -29,13 +29,14 @@ const NavBar = () => {
                 return <HomePage/>
         }
     }
+    
     return (
         <div className="flex flex-col min-h-screen">
             <nav className="flex justify-between items-center bg-darkMint p-4 text-mintCream">
                 {/*NavBar*/}
                 <div className="flex gap-2 font-semibold">
                     <a className="p-2 px-4 group" href="#" onClick={() => setView('home')} onMouseEnter={() => setHoveredTab('home')} onMouseLeave={() => setHoveredTab(null)}>
-                        Home
+                        Quoc Le
                         <div className={`bg-teal-500 h-[2px] ${getUnderlineClass('home')} transition-all duration-500`}></div>
                     </a>
 
