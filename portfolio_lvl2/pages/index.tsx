@@ -1,9 +1,9 @@
-
+import NavBar from "@/app/components/navBar";
 
 const IndexPage = () => {
     return (
-        <div>
-
+        <div className="bg-green-600 min-h-screen">
+            <NavBar/>
         </div>
     )
 }
