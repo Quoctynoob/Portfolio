@@ -17,6 +17,8 @@ const config: Config = {
       colors: {
         'darkMint': '#07271a',
         'mintCream': '#e1f4ed',
+        'darkYellow': '#CE8722',
+        'darkOrange': '#C06B2A',
       },
 
       fontFamily: {
