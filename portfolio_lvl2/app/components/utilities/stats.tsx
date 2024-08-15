@@ -1,6 +1,6 @@
 const Stats = () => {
     return (
-        <div>
+        <div className="space-y-8 md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center">
             <div className="w-1/2">
             <div className="rounded-md bg-yellow-400">
                 Education
