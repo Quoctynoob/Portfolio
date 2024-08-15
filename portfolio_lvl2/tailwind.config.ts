@@ -17,6 +17,10 @@ const config: Config = {
       colors: {
         'darkMint': '#07271a',
         'mintCream': '#e1f4ed',
+      },
+
+      fontFamily: {
+        pacifico: ['Pacifico', 'cursive'],
       }
     },
   },
