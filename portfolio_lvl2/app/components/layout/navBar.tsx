@@ -76,7 +76,7 @@ const NavBar = () => {
                 </div>
             </nav>
 
-            <main className="flex-grow p-4 text-white">
+            <main className="flex-grow p-4 text-mintCream">
                 {renderContent()}
             </main>
         </div>
