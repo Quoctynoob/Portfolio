@@ -1,9 +1,11 @@
+import ProjectsDisplay from "../utilities/projectsDisplay";
 
 
 const ProjectsPage = () => {
     return (
-        <div>
-            Projects
+        <div className="ml-24 mr-24">
+            Hello
+            <ProjectsDisplay/>
         </div>
     )
 }

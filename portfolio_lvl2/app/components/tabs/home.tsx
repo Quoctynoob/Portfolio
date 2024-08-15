@@ -28,10 +28,11 @@ const HomePage = () => {
                 Quoc Le<span className="text-yellow-400">.</span>
             </h1>
             <p className="p-9 text-lg">
-                Welcome to my page, feel free to read more
-                <a href="#" onClick={() => setView('about')} className="text-yellow-400 hover:bg-orange-500 hover:text-white transition-colors duration-300">about me</a>,<br></br>
-                check out my ongoing and past <a href="#" onClick={() => setView('projects')}><span className="text-yellow-400">projects</span></a>,
-                or <a href="#" onClick={() => setView('contact')}><span className="text-yellow-400">contact me</span></a>.
+                Welcome to my page, feel free to read more <a href="#" onClick={() => setView('about')} className="text-yellow-400 hover:bg-orange-500 hover:text-white transition-colors duration-300">about me</a>,<br></br>
+                check out my ongoing and past <a href="#" onClick={() => setView('projects')} className="text-yellow-400 hover:bg-orange-500 hover:text-white 
+                transition-colors duration-300">projects</a>,
+                or <a href="#" onClick={() => setView('contact')} className="text-yellow-400 hover:bg-orange-500 hover:text-white transition-colors duration-300">
+                    contact me</a>.
             </p>
             
             <Resume/>

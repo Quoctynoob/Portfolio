@@ -37,22 +37,22 @@ const NavBar = () => {
                 <div className="flex gap-2 font-semibold">
                     <a className="p-2 px-4 group" href="#" onClick={() => setView('home')} onMouseEnter={() => setHoveredTab('home')} onMouseLeave={() => setHoveredTab(null)}>
                         Quoc Le
-                        <div className={`bg-teal-500 h-[2px] ${getUnderlineClass('home')} transition-all duration-500`}></div>
+                        <div className={`bg-teal-500 h-[4px] ${getUnderlineClass('home')} transition-all duration-500 rounded-sm`}></div>
                     </a>
 
                     <a className="p-2 px-4 group" href="#" onClick={() => setView('about')} onMouseEnter={() => setHoveredTab('about')} onMouseLeave={() => setHoveredTab(null)}>
                         About
-                        <div className={`bg-teal-500 h-[2px] ${getUnderlineClass('about')} transition-all duration-500`}></div>
+                        <div className={`bg-teal-500 h-[4px] ${getUnderlineClass('about')} transition-all duration-500 rounded-sm`}></div>
                     </a>
 
                     <a className="p-2 px-4 group" href="#"  onClick={() => setView('projects')} onMouseEnter={() => setHoveredTab('projects')} onMouseLeave={() => setHoveredTab(null)}>
                         Projects
-                        <div className={`bg-teal-500 h-[2px] ${getUnderlineClass('projects')} transition-all duration-500`}></div>
+                        <div className={`bg-teal-500 h-[4px] ${getUnderlineClass('projects')} transition-all duration-500 rounded-sm`}></div>
                     </a>
 
                     <a className="p-2 px-4 group" href="#" onClick={() => setView('contact')} onMouseEnter={() => setHoveredTab('contact')} onMouseLeave={() => setHoveredTab(null)}>
                         Contact
-                        <div className={`bg-teal-500 h-[2px] ${getUnderlineClass('contact')} transition-all duration-500`}></div>
+                        <div className={`bg-teal-500 h-[4px] ${getUnderlineClass('contact')} transition-all duration-500 rounded-sm`}></div>
                     </a>
                     
                 </div>
