@@ -1,7 +1,11 @@
+import AboutMe from "../utilities/aboutMe";
+import Stats from "../utilities/stats";
+
 const AboutPage = () => {
     return (
-        <div>
-            About
+        <div className="ml-12 mr-12">
+            <AboutMe/>
+            <Stats/>
         </div>
     )
 }

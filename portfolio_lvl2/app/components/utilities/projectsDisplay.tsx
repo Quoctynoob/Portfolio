@@ -2,11 +2,14 @@ import React, { useEffect, useRef } from 'react';
 
 function ProjectsDisplay() {
     const images = [
-        { src: '/images/tennisproject.jpg', link: 'https://tennis-locator.vercel.app/', description: 'Description 1' },
-        { src: '/images/restaurantproject.jpg', link: 'https://quoctynoob.github.io/Me-s-restaurant/', description: 'Description 2' },
-        { src: '/images/firebaseproject.jpg', link: 'https://quoctynoob.github.io/LearnWithFirebase/', description: 'Description 3' },
-        { src: '/images/webproject.jpg', link: 'https://quoctynoob.github.io/LearnTheWebBasics/', description: 'Description 1' },
-        // Add more images as needed
+        { src: '/images/tennisproject.jpg', link: 'https://tennis-locator.vercel.app/', 
+            description: 'Tennis Locator' },
+        { src: '/images/restaurantproject.jpg', link: 'https://quoctynoob.github.io/Me-s-restaurant/', 
+            description: 'Responsive restaurant menu' },
+        { src: '/images/firebaseproject.jpg', link: 'https://quoctynoob.github.io/LearnWithFirebase/', 
+            description: 'Todo-list' },
+        { src: '/images/webproject.jpg', link: 'https://quoctynoob.github.io/LearnTheWebBasics/', 
+            description: 'Jokes and Weather API' },
     ];
 
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -37,11 +40,12 @@ function ProjectsDisplay() {
         };
     }, []);
 
+    
     return (
-        <div className="relative">
+        <div className="relative flex items-center">
             <button
                 onClick={() => handleScroll('left')}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-gray-700 text-white flex items-center justify-center"
+                className="z-10 w-12 h-12 rounded-full text-white flex items-center justify-center mr-4"
             >
                 &#10094;
             </button>
@@ -54,13 +58,13 @@ function ProjectsDisplay() {
                 {images.map((image, index) => (
                     <div
                         key={index}
-                        className="flex-shrink-0 w-1/2 snap-center transform transition-transform duration-300 hover:scale-105"
+                        className="flex-shrink-0 w-1/2 snap-center overflow-hidden"
                     >
                         <a href={image.link} target="_blank" rel="noopener noreferrer">
                             <img
                                 src={image.src}
                                 alt={`Image ${index + 1}`}
-                                className="w-full h-64 filter grayscale hover:filter-none"
+                                className="w-full h-64 filter grayscale hover:filter-none transform transition-transform duration-300 hover:scale-110"
                             />
                         </a>
                         <p className="text-center mt-2">{image.description}</p>
@@ -70,7 +74,7 @@ function ProjectsDisplay() {
 
             <button
                 onClick={() => handleScroll('right')}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-gray-700 text-white flex items-center justify-center"
+                className="z-10 w-12 h-12 rounded-full text-white flex items-center justify-center ml-4"
             >
                 &#10095;
             </button>
