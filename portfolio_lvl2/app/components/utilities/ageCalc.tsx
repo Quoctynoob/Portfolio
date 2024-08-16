@@ -17,8 +17,8 @@ const AgeCalculator = () => {
   }, []);
 
   return (
-    <div className="relative overflow-x-auto sm:rounded-lg">
-        <td className="text-darkMint">
+    <div className="relative overflow-x-auto sm:rounded-lg" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <td className="text-darkMint font-bold text-5xl">
             <p>{age}</p>
         </td>
     </div>

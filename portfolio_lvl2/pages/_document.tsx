@@ -13,7 +13,7 @@ class MyDocument extends Document {
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             {/* Link to the Pacifico font */}
-            <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Londrina+Sketch&family=Pacifico&family=Train+One&display=swap" rel="stylesheet"/>
         </Head>
         <body>
           <Main />

@@ -22,7 +22,8 @@ const config: Config = {
       },
 
       fontFamily: {
-        pacifico: ['Pacifico', 'cursive'],
+        'pacifico': ['Pacifico', 'cursive' ],
+        'train': ['"Train One"', 'sans-serif'],
       }
     },
   },
