@@ -7,11 +7,8 @@ const AboutMe = () => {
                 <div className="absolute w-60 h-56 bg-darkOrange -bottom-14 left-6 z-0"></div>
 
                 {/* Profile Picture */}
-                <img
-                    src='/images/quoc.jpg'
-                    alt="profile picture"
-                    className="relative z-30 w-80 h-full object-cover rounded-lg shadow-2xl"
-                />
+                <img src='/images/profilePics.JPG' alt="profile picture" 
+                className="relative z-30 w-80 h-full object-cover rounded-lg shadow-2xl"/>
             </div>
             <div className="w-1/2">
                 <h1 className="text-6xl font-bold text-green-500">
