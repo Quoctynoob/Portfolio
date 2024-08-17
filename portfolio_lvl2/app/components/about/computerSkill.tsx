@@ -34,8 +34,8 @@ function ComputerSkill() {
               <button
                 onClick={() => setCurrentSkill(skill)}
                 className={`transition-colors duration-500 px-4 py-2 text-xl text-darkMint bg-accent 
-                  w-full hover:bg-slate-400 font-semibold ${
-                    currentSkill.title === skill.title ? "" : ""
+                  w-full hover:bg-hoverOrange font-semibold ${
+                    currentSkill.title === skill.title ? "bg-hoverOrange rounded-xl" : ""
                   }`}
               >
                 {skill.title}

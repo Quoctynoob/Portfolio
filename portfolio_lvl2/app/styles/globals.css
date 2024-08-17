@@ -116,6 +116,13 @@ body {
   }
 }
 
+@layer utilities {
+  .stroke-text {
+    -webkit-text-stroke: 2px #C06B2A; /* Match the stroke color to the original text color */
+    color: transparent; /* Ensures the fill color is removed, leaving only the stroke */
+  }
+}
+
 .slide-in-left {
   animation: slideInLeft 2s ease-out forwards;
 }

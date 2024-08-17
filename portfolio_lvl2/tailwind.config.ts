@@ -20,11 +20,14 @@ const config: Config = {
         'darkYellow': '#CE8722',
         'darkOrange': '#C06B2A',
         'warmOrange' : '#D48932',
+        'hoverOrange' : '#D4884B',
       },
 
       fontFamily: {
         'pacifico': ['Pacifico', 'cursive' ],
         'train': ['"Train One"', 'sans-serif'],
+        'barcode': ['"Libre Barcode 39"', 'sans-serif'],
+        'sketch': ['"Londrina Sketch"', 'cursive'],
       }
     },
   },
