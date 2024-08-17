@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Typewriter from "../utilities/typeWriter";
 import AboutPage from "./about";
-import ContactPage from "./contact";
 import ProjectsPage from "./projects";
 import Resume from "../utilities/download";
 
@@ -14,8 +13,6 @@ const HomePage = () => {
                 return <AboutPage/>
             case 'projects':
                 return <ProjectsPage/>
-            case 'contact':
-                return <ContactPage/>
             default:
                 return <HomePage/>
         }

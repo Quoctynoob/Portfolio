@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 
-
 import AboutPage from "../tabs/about";
 import HomePage from "../tabs/home";
 import ProjectsPage from "../tabs/projects";
-import ContactPage from "../tabs/contact";
 
 const NavBar = () => {
     const [view, setView] = useState<string>('home');
@@ -23,8 +21,6 @@ const NavBar = () => {
                 return <AboutPage/>
             case 'projects':
                 return <ProjectsPage/>
-            case 'contact':
-                return <ContactPage/>
             default:
                 return <HomePage/>
         }
@@ -50,10 +46,6 @@ const NavBar = () => {
                         <div className={`bg-teal-500 h-[4px] ${getUnderlineClass('projects')} transition-all duration-500 rounded-sm`}></div>
                     </a>
 
-                    <a className="p-2 px-4 group" href="#" onClick={() => setView('contact')} onMouseEnter={() => setHoveredTab('contact')} onMouseLeave={() => setHoveredTab(null)}>
-                        Contact
-                        <div className={`bg-teal-500 h-[4px] ${getUnderlineClass('contact')} transition-all duration-500 rounded-sm`}></div>
-                    </a>
                     
                 </div>
 
