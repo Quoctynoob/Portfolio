@@ -20,32 +20,38 @@ function SkillDisplay() {
 
   const circumference = 2 * Math.PI * 120;
 
+  
   return (
-    <div className="text-mintCream">
-        <p>COMPUTER</p>
-        <p>SKILLS</p>
-        <section className="p-6 space-y-6 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0">
-            <div className="grid grid-cols-2 gap-6">
+    <div className="text-darkMint place-content-center p-6">    
+        <p className="font-train text-7xl">COMPUTER</p>
+        <p className="font-bold text-8xl ">SKILLS</p>
+        <hr className="my-2 border-t-8 border-darkMint" />
+
+        <section className="flex flex-col items-center">
+            <div className="space-y-4 w-full">
             {skills.map((skill) => (
-                <button
-                key={skill.title}
+              <div key={skill.title} className="w-full">
+              <button
                 onClick={() => setCurrentSkill(skill)}
-                className={`transition-colors duration-500 px-4 py-2 text-xl text-darkMint bg-accent rounded-md h-14 w-44 hover:bg-green-400 ${
+                className={`transition-colors duration-500 px-4 py-2 text-xl text-darkMint bg-accent 
+                  w-full hover:bg-slate-400 ${
                     currentSkill.title === skill.title
-                    ? "font-bold ring-2 ring-accent"
-                    : ""
-                }`}
-                >
+                      ? "font-bold ring-2 ring-accent"
+                      : ""
+                  }`}
+              >
                 {skill.title}
-                </button>
+              </button>
+              <hr className="my-2 border-t-4 border-darkMint"/>
+            </div>
             ))}
             </div>
 
-            <div className="relative flex items-center justify-center">
-                <svg className="transform -rotate-90 w-72 h-72">
+            <div className="relative flex items-center justify-center mt-4">
+                <svg className="transform -rotate-90 w-72 h-72 mt-5">
                     <SkillCircle percent={currentSkill.percent} circumference={circumference}/>
                 </svg>
-                <span className="absolute text-5xl">{`${currentSkill.percent}%`}</span>
+                <span className="absolute text-5xl font-bold">{`${currentSkill.percent}%`}</span>
             </div>
       </section>
     </div>

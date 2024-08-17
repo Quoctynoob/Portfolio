@@ -14,22 +14,23 @@ function SkillCircle({ percent, circumference }: SkillCircleProps) {
         cy="145"
         r="120"
         stroke="currentColor"
-        strokeWidth="30"
+        strokeWidth="45"
         fill="transparent"
-        className="text-mintCream"
+        className="text-darkMint"
       />
       <circle
         cx="145"
         cy="145"
         r="120"
         stroke="currentColor"
-        strokeWidth="30"
+        strokeWidth="45"
         fill="transparent"
         strokeDasharray={circumference}
         strokeDashoffset={
           circumference - (percent / 100) * circumference
         }
-        className="text-green-700"
+        strokeLinecap="round"
+        className="text-warmOrange"
       />
     </>
   );

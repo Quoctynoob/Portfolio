@@ -19,6 +19,7 @@ const config: Config = {
         'mintCream': '#e1f4ed',
         'darkYellow': '#CE8722',
         'darkOrange': '#C06B2A',
+        'warmOrange' : '#D48932',
       },
 
       fontFamily: {
