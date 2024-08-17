@@ -27,7 +27,7 @@ const AboutMe = () => {
                     <br/><br/>
                     Outside of academics and coding, I'm an avid tennis player and enjoy other racket sports as well, which
                     keep me active and disciplined. I also love watching anime, which has sparked my interest in Japanese
-                    culture and led me to start learning the language.
+                    culture.
                     <br/><br/>
                     I'm open to job opportunities where I can contribute, learn, and grow. If you have a good opportunity
                     that matches my skills and experience, don't hesitate to contact me.
