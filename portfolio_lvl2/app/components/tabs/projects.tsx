@@ -1,4 +1,4 @@
-import ProjectsDisplay from "../utilities/projectsDisplay";
+import ProjectsDisplay from "../projects/projectsDisplay";
 
 
 const ProjectsPage = () => {

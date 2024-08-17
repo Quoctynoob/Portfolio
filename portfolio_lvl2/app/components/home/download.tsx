@@ -1,4 +1,3 @@
-// components/Resume.tsx
 import React from 'react';
 
 const Resume = () => {

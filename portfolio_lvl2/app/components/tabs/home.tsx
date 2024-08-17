@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Typewriter from "../utilities/typeWriter";
+import Typewriter from "../home/typeWriter";
 import AboutPage from "./about";
 import ProjectsPage from "./projects";
-import Resume from "../utilities/download";
+import Resume from "../home/download";
 
 const HomePage = () => {
     const [view, setView] = useState<string>('home');

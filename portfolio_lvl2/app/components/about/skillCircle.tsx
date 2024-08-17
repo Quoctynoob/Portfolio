@@ -1,4 +1,3 @@
-// src/components/svg/SkillCircle.tsx
 import React from "react";
 
 interface SkillCircleProps {

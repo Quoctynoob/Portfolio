@@ -1,5 +1,5 @@
-import AboutMe from "../utilities/aboutMe";
-import Stats from "../utilities/stats";
+import AboutMe from "../about/aboutMe";
+import Stats from "../about/stats";
 
 const AboutPage = () => {
     return (

@@ -1,4 +1,4 @@
-import AgeCalculator from "../utilities/ageCalc";
+import AgeCalculator from "./ageCalc";
 
 const Info = () => {
     return (

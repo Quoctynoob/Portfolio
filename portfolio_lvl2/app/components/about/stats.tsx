@@ -1,4 +1,4 @@
-import Info from "../reusable/info";
+import Info from "./info";
 import ComputerSkill from "./computerSkill";
 
 const Stats = () => {

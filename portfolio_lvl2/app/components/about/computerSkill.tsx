@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SkillCircle from "../reusable/skillCircle";
+import SkillCircle from "./skillCircle";
 
 interface Skill {
   title: string;
