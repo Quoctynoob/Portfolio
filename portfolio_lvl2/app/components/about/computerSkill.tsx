@@ -8,12 +8,12 @@ interface Skill {
 
 function ComputerSkill() {
   const skills: Skill[] = [
-    { title: "HTML + CSS", percent: 75 },
-    { title: "Java", percent: 75 },
-    { title: "Python", percent: 75 },
-    { title: "JavaScript", percent: 70 },
-    { title: "SQL", percent: 80 },
-    { title: "C", percent: 65 },
+    { title: "HTML + CSS", percent: 85 },
+    { title: "Java", percent: 50 },
+    { title: "Python", percent: 50 },
+    { title: "TypeScript", percent: 85 },
+    { title: "SQL", percent: 50 },
+    { title: "C", percent: 80 },
   ];
 
   const [currentSkill, setCurrentSkill] = useState<Skill>(skills[0]);
