@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import AboutPage from "../tabs/about";
 import HomePage from "../tabs/home";
 import ProjectsPage from "../tabs/projects";
@@ -12,8 +11,6 @@ const NavBar = () => {
         if (hoveredTab && hoveredTab !== tab) return 'w-0';
         return view === tab || hoveredTab === tab ? 'w-full' : 'w-0';
     };
-    
-    
 
     const renderContent = () => {
         switch (view) {
@@ -25,10 +22,10 @@ const NavBar = () => {
                 return <HomePage/>
         }
     }
-    
+
     return (
         <div className="flex flex-col min-h-screen">
-            <nav className="flex justify-between items-center bg-darkMint p-4 text-mintCream">
+            <nav className="flex justify-between items-center bg-darkMint p-4 text-mintCream fade-in-up">
                 {/*NavBar*/}
                 <div className="flex gap-2 font-semibold">
                     <a className="p-2 px-4 group" href="#" onClick={() => setView('home')} onMouseEnter={() => setHoveredTab('home')} onMouseLeave={() => setHoveredTab(null)}>
@@ -45,8 +42,6 @@ const NavBar = () => {
                         Projects
                         <div className={`bg-teal-500 h-[4px] ${getUnderlineClass('projects')} transition-all duration-500 rounded-sm`}></div>
                     </a>
-
-                    
                 </div>
 
                 <div className="ml-auto flex items-center gap-4 ">
@@ -72,7 +67,7 @@ const NavBar = () => {
                 {renderContent()}
             </main>
         </div>
-    )
+    );
 }
 
 export default NavBar;

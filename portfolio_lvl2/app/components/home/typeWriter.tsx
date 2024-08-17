@@ -12,8 +12,8 @@ const Typewriter: React.FC = () => {
                 'สวัสดี', '你好', 'Cześć','مرحبا','নমস্কার','Здравейте','Hyvää päivää',
                 'γεια σας','नमस्ते','שלום','नमस्ते','سلام','Grüß Gott'
             ],
-            typeSpeed: 100,
-            backSpeed: 50,
+            typeSpeed: 120,
+            backSpeed: 60,
             loop: true,
         };
 

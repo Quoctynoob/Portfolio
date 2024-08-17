@@ -36,7 +36,7 @@ const AboutPage = () => {
     }, []);
 
     return (
-        <div ref={aboutPageRef} className="transition-colors duration-500 bg-darkMint">
+        <div ref={aboutPageRef} className="transition-colors duration-500 bg-darkMint fade-in-up">
             <AboutMe />
             <div ref={statsRef}>
                 <Stats />
