@@ -15,18 +15,18 @@ const AboutMe = () => {
                     About <span className="text-green-200">Me</span>.
                 </h1>
                 <p className="mt-4 text-lg">
-                    I'm a computer science student at the University of Guelph with a strong passion for full-stack
-                    development, particularly enjoying back-end work. My academic journey has equipped me with a solid
-                    foundation in algorithms, data structures, and software engineering principles. I've worked on several
-                    projects, including developing web applications using technologies like React, Java, Node.js, and HTML/CSS.
-                    Currently, I'm working on an exciting game project using Java, which has allowed me to deepen my
-                    understanding of object-oriented programming and game design.
+                    Hi there! I'm a computer science student at the University of Guelph with a deep passion for full-stack 
+                    development. Throughout my academic journey, I've built a strong foundation in algorithms, 
+                    data structures, and software engineering principles, which I continuously apply to my projects.
                     <br/><br/>
-                    Outside of academics and coding, I'm an avid tennis player and enjoy other racket sports as well, which
-                    keep me active and disciplined.
+                    Currently, I'm collaborating on an exciting game development project, where I'm sharpening my skills 
+                    and learning the intricacies of game design and development.
                     <br/><br/>
-                    I'm open to job opportunities where I can contribute, learn, and grow. If you have a good opportunity
-                    that matches my skills and experience, don't hesitate to contact me.
+                    Beyond the world of coding, I'm an avid tennis player and enjoy other racket sports, which keep me 
+                    active, focused, and disciplined.
+                    <br/><br/>
+                    I'm actively seeking job opportunities where I can contribute, learn, and grow as a developer. 
+                    If you have an opportunity that could benefit from my skills and enthusiasm, I'd love to connect!
                 </p>
             </div>
         </div>

@@ -10,7 +10,7 @@ function ComputerSkill() {
   const skills: Skill[] = [
     { title: "HTML + CSS", percent: 85 },
     { title: "Java", percent: 50 },
-    { title: "Python", percent: 50 },
+    { title: "Python", percent: 75 },
     { title: "TypeScript", percent: 85 },
     { title: "SQL", percent: 50 },
     { title: "C", percent: 80 },
@@ -25,7 +25,7 @@ function ComputerSkill() {
     <div className="text-darkMint place-content-center p-6">    
         <p className="font-train text-7xl staggered-fade">COMPUTER</p>
         <p className="font-bold text-8xl staggered-fade">SKILLS</p>
-        <hr className="my-2 border-t-8 border-darkMint staggered-fade" />
+        <hr className="my-2 border-t-8 border-darkMint staggered-fade"/>
 
         <section className="flex flex-col items-center">
             <div className="space-y-4 w-full staggered-fade">
