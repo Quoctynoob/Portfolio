@@ -45,7 +45,7 @@ const NavBar = () => {
                 </div>
 
                 <div className="ml-auto flex items-center gap-4 ">
-                    <a href="www.linkedin.com/in/quoc-le-293333294" className="px-4 py-2">
+                    <a href="https://www.linkedin.com/in/quoc-le-293333294/" className="px-4 py-2">
                         <img src="icons/linkedin.svg" className="w-6 h-6" alt="Linkedin"/>
                     </a>
 
