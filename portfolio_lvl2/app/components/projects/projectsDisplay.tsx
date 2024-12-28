@@ -1,7 +1,27 @@
-import React, { useEffect, useRef } from 'react';
+import React from "react";
 
-function ProjectsDisplay() {
-    const images = [
+interface Image {
+    imageSrc: string;
+    link: string;
+    text?: string;
+}
+
+const ProjectDisplay: React.FC<Image> = ({ imageSrc, link, text = "Image"}) => {
+    return (
+        <div className="flex justify-center items-center h-screen bg-gray-100">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+            src={imageSrc}
+            alt={text}
+            className="rounded-lg shadow-lg hover:opacity-80 transition duration-300"
+            />
+        </a>
+        </div>
+    );
+};
+
+export default ProjectDisplay;
+ /*const images = [
         { src: '/images/tennisproject.jpg', link: 'https://tennis-locator.vercel.app/', 
             description: 'Tennis Locator' },
         { src: '/images/restaurantproject.jpg', link: 'https://quoctynoob.github.io/Me-s-restaurant/', 
@@ -79,7 +99,4 @@ function ProjectsDisplay() {
                 &#10095;
             </button>
         </div>
-    );
-}
-
-export default ProjectsDisplay;
+    );*/
