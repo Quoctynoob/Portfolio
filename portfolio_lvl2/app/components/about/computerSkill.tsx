@@ -45,15 +45,16 @@ function ComputerSkill() {
             ))}
             </div>
 
-            <div className="relative flex items-center justify-center mt-4 staggered-fade">
-                <svg className="transform -rotate-90 w-72 h-72 mt-5">
-                    <SkillCircle percent={currentSkill.percent} circumference={circumference}/>
-                </svg>
-                <span className="absolute text-5xl font-bold">{`${currentSkill.percent}%`}</span>
-            </div>
+        
       </section>
     </div>
   );
 }
 
 export default ComputerSkill;
+/*<div className="relative flex items-center justify-center mt-4 staggered-fade">
+                <svg className="transform -rotate-90 w-72 h-72 mt-5">
+                    <SkillCircle percent={currentSkill.percent} circumference={circumference}/>
+                </svg>
+                <span className="absolute text-5xl font-bold">{`${currentSkill.percent}%`}</span>
+            </div>*/
