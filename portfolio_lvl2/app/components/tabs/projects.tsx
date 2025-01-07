@@ -37,14 +37,17 @@ const ProjectsPage = () => {
                     imageSrc="/images/firebaseproject.jpg"
                     link="https://quoctynoob.github.io/LearnWithFirebase/"
                     text="Todo-list"
-                    description="How Bout htis"
+                    description="Blank"
                 />
 
                 <ProjectDisplay
                     imageSrc="/images/webproject.jpg"
                     link="https://quoctynoob.github.io/LearnTheWebBasics/"
                     text="Jokes and Weather API"
-                    description="Testujng"
+                    description="Designed and developed a straightforward website to gain practical experience 
+                    with API integration. The project utilizes vanilla HTML, CSS, and JavaScript to fetch and display data dynamically 
+                    from multiple APIs. With a clean and functional layout, the website focuses on usability and simplicity. 
+                    It is hosted on GitHub for easy access and review of the code."
                 />
             </div>
         </div>
