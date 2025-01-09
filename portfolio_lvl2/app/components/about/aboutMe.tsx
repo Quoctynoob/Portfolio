@@ -22,7 +22,7 @@ const AboutMe = () => {
                     Currently, I'm collaborating on an exciting game development project, where I'm sharpening my skills 
                     and learning the intricacies of game design and development.
                     <br/><br/>
-                    Beyond the world of coding, I'm an avid tennis player and enjoy other racket sports, which keep me 
+                    Outside the world of coding, I'm an avid tennis player and enjoy badminton, which keep me 
                     active, focused, and disciplined.
                     <br/><br/>
                     I'm actively seeking job opportunities where I can contribute, learn, and grow as a developer. 
