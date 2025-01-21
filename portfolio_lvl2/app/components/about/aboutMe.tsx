@@ -15,15 +15,12 @@ const AboutMe = () => {
                     About <span className="text-green-200">Me</span>.
                 </h1>
                 <p className="mt-4 text-lg">
-                    Hi there! I'm a computer science student at the University of Guelph with a deep passion for full-stack 
-                    development. Throughout my academic journey, I've built a strong foundation in algorithms, 
-                    data structures, and software engineering principles, which I continuously apply to my projects.
+                    Hi there, I'm Quoc, but you can call me Leon! I'm a Computer Science and Geomatics student at the 
+                    University of Guelph.
+                    I'm super into programming and tennis. Game development and API design are some of my favorite areas to explore.
                     <br/><br/>
-                    Currently, I'm collaborating on an exciting game development project, where I'm sharpening my skills 
-                    and learning the intricacies of game design and development.
-                    <br/><br/>
-                    Outside the world of coding, I'm an avid tennis player and enjoy badminton, which keep me 
-                    active, focused, and disciplined.
+                    When I'm not at my computer, you'll probably find me playing tennis, badminton, TFT, or coming up with ideas 
+                    for new projects. I love creating cool and useful projects that make everyday life easier.
                     <br/><br/>
                     I'm actively seeking job opportunities where I can contribute, learn, and grow as a developer. 
                     If you have an opportunity that could benefit from my skills and enthusiasm, I'd love to connect!
